@@ -34,7 +34,7 @@ def load_single_dataset(file_path, num_device):
     return x, y
 
 
-def get_data(dataset_path, dataset, date, num_classes=6, k=None):
+def get_data(dataset_path, date, num_classes=6, k=None):
     x = np.load(os.path.join(dataset_path, 'WiSig', f"x_rx_1-1_date{date}.npy"))
     y = np.load(os.path.join(dataset_path, 'WiSig', f"y_rx_1-1_date{date}.npy"))
 
