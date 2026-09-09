@@ -32,7 +32,7 @@ def parse_args():
     parser = argparse.ArgumentParser(description='etta',
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('-m', type=str, default='train', help='Training mode.')
-    parser.add_argument('-sd', type=int, required=True, help='Random seed.')
+    parser.add_argument('-sd', type=int, default=2025, help='Random seed.')
     parser.add_argument('-e', type=int, default='500', help='Training epochs')
     parser.add_argument('-b', type=str, default='ours', help='Backbone network.')
     parser.add_argument('-s', type=int, nargs=2, required=True, help='Source domain info: S, ft.')
