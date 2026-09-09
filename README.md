@@ -15,8 +15,10 @@ Deep Learning (DL)-based radio frequency fingerprint (RFF) identification has ga
 
 You can find more details in our [paper](https://ieeexplore.ieee.org/abstract/document/11617309): J. Zhang, T. Tang, Q. Wang, Y. Yin, T. Ohtsuki and G. Gui, "Robust Radio Frequency Fingerprint Identification Under Temporal Domain Shifts Via Energy-Based Test-Time Adaptation," in *IEEE Transactions on Mobile Computing*, doi: 10.1109/TMC.2026.3715839. 
 
+## Directory Tree
+
 ```
-filetree 
+ETTA-main 
 ├── config
 ├── data
 ├── model
