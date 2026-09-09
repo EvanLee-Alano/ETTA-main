@@ -55,17 +55,27 @@ The LoRa dataset can be downloaded from this link: [https://pan.baidu.com/s/1uhQ
 
 ## How to run?
 
-```
 ORACLE Dataset:
+```
 python train_wifi -s 1 26
+```
+```
 python adapt_wifi -sd 2025 -s 1 26 -t 2 26
+```
 
 WiSig Dataset:
+```
 python train_wisig -s 1
+```
+```
 python adapt_wisig -sd 2025 -s 1 -t 2
+```
 
 LoRa Dataset:
+```
 python train_lora -s 1
+```
+```
 python adapt_lora -sd 2025 -s 1 -t 2
 ```
 
