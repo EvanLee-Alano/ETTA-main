@@ -39,7 +39,6 @@ def parse_args():
     parser.add_argument('-l', type=float, default=1e-3, help='Learning rate.')
     parser.add_argument('-bs', type=int, default=128, help='Batch size.')
     parser.add_argument('-d', type=int, default=0, help='GUP device number.')
-    parser.add_argument('-dn', type=str, default='wisig', help='Dataset name.')
     args = parser.parse_args()
     return args
 
@@ -117,7 +116,7 @@ def test(model, dataloader):
 
 def main():
     # dataloader
-    x_train, x_valid, x_test, y_train, y_valid, y_test = get_data(config.dataset_path, config.dataset_name, config.source['d'])
+    x_train, x_valid, x_test, y_train, y_valid, y_test = get_data(config.dataset_path, config.source['d'])
     train_loader = get_dataloader(config.mode, x_train, y_train, config.batch_size)
     valid_loader = get_dataloader(config.mode, x_valid, y_valid, config.batch_size)
     test_loader = get_dataloader(config.mode, x_test, y_test, config.batch_size)
